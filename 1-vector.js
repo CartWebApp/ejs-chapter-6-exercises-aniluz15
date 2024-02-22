@@ -1,4 +1,25 @@
 // Write a class Vec that represents a vector in two-dimensional space. It takes x and y parameters (numbers), which it should save to properties of the same name.
+class Vec {
+    constructor(x, y) {
+        this.x = x
+        this.y = y
+    }
+
+    minus(newVec) {
+        return new Vec(this.x - newVec.x, this.y - newVec.y);
+    }
+
+    plus(newVec) {
+        return new Vec(this.x + newVec.x, this.y + newVec.y)
+    }
+    length(newVec) {
+        console.log("test");
+        return new Vec(Math.sqrt(x * x + y * y))
+    }
+    
+    
+}
+
 
 // Give the Vec prototype two methods, plus and minus, that take another vector as a parameter and return a new vector that has the sum or difference of the two vectors’ (this and the parameter) x and y values.
 
